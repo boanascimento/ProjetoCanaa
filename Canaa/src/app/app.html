@@ -5,8 +5,8 @@
         </ion-toolbar>
     </ion-header>
 
-    <ion-content padding>
-        <ion-list inset>
+    <ion-content>
+        <ion-list>
             <button menuClose ion-item *ngFor="let pagina of paginas" (click)="abrePagina(pagina.componente)">
                 {{pagina.titulo}}
                 <ion-icon float-right name="{{pagina.icone}}"></ion-icon>

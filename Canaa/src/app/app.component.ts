@@ -19,7 +19,8 @@ export class MyApp {
 
   public paginas = [
     {titulo: 'Home', componente: HomePage, icone: "home" },
-    {titulo: 'Perfil', componente: EnderecoPage, icone: "person-add"  },
+    {titulo: 'Perfil', componente: EnderecoPage, icone: "person-add"},
+    {titulo: 'Status do meu pedido', componente: EnderecoPage, icone: "person-add"},
   ];
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, afAuth: AngularFireAuth) {

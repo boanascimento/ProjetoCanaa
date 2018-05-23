@@ -4,6 +4,7 @@ import { AmbienteComprasPage } from '../ambiente-compras/ambiente-compras';
 import { GasPage } from '../gas/gas';
 import { AuthService } from '../../providers/auth/auth.service';
 import { SigninPage } from '../signin/signin';
+import { User } from '../../providers/auth/user';
 @Component({
 	selector: 'page-home',
 	templateUrl: 'home.html'
@@ -16,6 +17,9 @@ export class HomePage implements OnInit {
 	public itemDoMenu = [];
 
 	public menuR: string;
+
+	user: User = new User();
+	
 
 
 	constructor(
@@ -41,6 +45,7 @@ export class HomePage implements OnInit {
 			}
 			
 		];
+		console.log(this.user)
 	}
 
 
